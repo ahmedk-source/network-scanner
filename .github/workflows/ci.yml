@@ -37,7 +37,7 @@ jobs:
       - name: Type check (strict on src/)
         run: python -m mypy
 
-      - name: Tests with coverage (gate: 90%)
+      - name: "Tests with coverage (gate: 90%)"
         run: python -m pytest --cov=netscan --cov-report=term-missing -q
 
       - name: Smoke-test the CLI on loopback only
